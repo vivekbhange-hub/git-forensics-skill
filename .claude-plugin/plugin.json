@@ -1,0 +1,20 @@
+{
+  "name": "git-forensics-skill",
+  "description": "Your git log already knows where the bugs are. Ranks churn-times-complexity hotspots, finds files that secretly change together, and reports bus factor and knowledge at risk, all from git history, plus a newcomer briefing and a disciplined git bisect.",
+  "version": "1.0.0",
+  "author": { "name": "Vivek Bhange", "url": "https://github.com/vivekbhange-hub" },
+  "homepage": "https://github.com/vivekbhange-hub/git-forensics-skill",
+  "repository": "https://github.com/vivekbhange-hub/git-forensics-skill",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "claude-skills",
+    "git",
+    "code-analysis",
+    "hotspots",
+    "technical-debt",
+    "bus-factor",
+    "git-bisect",
+    "onboarding"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "commits_scanned": 51,
+  "files_ranked": 46,
+  "hotspots": [
+    {
+      "added": 244,
+      "authors": 4,
+      "churn_pct": 100.0,
+      "commits": 19,
+      "complexity": 776.0,
+      "complexity_pct": 100.0,
+      "deleted": 51,
+      "file": "src/shop/orders.py",
+      "fix_commits": 10,
+      "fix_share": 52.6,
+      "lines": 193,
+      "max_indent": 6.0,
+      "mean_indent": 3.02,
+      "rank": 1,
+      "score": 100.0
+    },
+    {
+      "added": 77,
+      "authors": 4,
+      "churn_pct": 96.7,
+      "commits": 14,
+      "complexity": 145.0,
+      "complexity_pct": 93.5,
+      "deleted": 19,
+      "file": "billing/invoice.py",
+      "fix_commits": 7,
+      "fix_share": 50.0,
+      "lines": 58,
+      "max_indent": 2.0,
+      "mean_indent": 1.5,
+      "rank": 2,
+      "score": 90.4
+    },
+    {
+      "added": 97,
+      "authors": 4,
+      "churn_pct": 93.5,
+      "commits": 11,
+      "complexity": 248.0,
+      "complexity_pct": 95.7,
+      "deleted": 14,
+      "file": "src/shop/pricing.py",
+      "fix_commits": 3,
+      "fix_share": 27.3,
+      "lines": 83,
+      "max_indent": 3.0,
+      "mean_indent": 1.99,
+      "rank": 3,
+      "score": 89.4
+    }
+  ],
+  "limits": [
+    "Renames are followed only when git detects them (similarity 50 percent or more).",
+    "Complexity is an indentation proxy, not cyclomatic complexity.",
+    "Fix share reads commit subjects; squash merges and vague subjects hide fixes."
+  ],
+  "paths": [],
+  "repo": "demo-repo",
+  "skipped_unreadable_or_binary": 0,
+  "window": {
+    "since": null,
+    "until": null
+  }
+}

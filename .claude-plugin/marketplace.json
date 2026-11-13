@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "git-forensics-skill",
+  "description": "Your git log already knows where the bugs are: hotspots, hidden coupling and bus factor from history alone.",
+  "owner": { "name": "Vivek Bhange", "url": "https://github.com/vivekbhange-hub" },
+  "plugins": [
+    {
+      "name": "git-forensics-skill",
+      "description": "Five skills and two agents that rank fragile files by churn and complexity, reveal files that change together without referencing each other, report bus factor and knowledge at risk, brief a newcomer on the state of a codebase and run a disciplined git bisect.",
+      "source": "./",
+      "category": "development",
+      "homepage": "https://github.com/vivekbhange-hub/git-forensics-skill"
+    }
+  ]
+}
