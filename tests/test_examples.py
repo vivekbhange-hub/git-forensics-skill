@@ -14,6 +14,11 @@ OUTPUT = ROOT / "examples" / "output"
 EXPECTED = ["coupling-hidden.md", "coupling.md", "hotspots.json", "hotspots.md", "owners-fast.md", "owners.md"]
 
 
+def utc(stamp: str) -> str:
+    """Git 2.51+ prints a UTC offset of zero as 'Z' in %aI; older versions print '+00:00'. Accept both."""
+    return stamp[:-1] + "+00:00" if stamp.endswith("Z") else stamp
+
+
 class CommittedOutputTests(unittest.TestCase):
     def test_expected_files_are_committed(self):
         self.assertEqual(sorted(p.name for p in OUTPUT.iterdir()), EXPECTED)
@@ -97,8 +102,8 @@ class SyntheticHistoryTests(unittest.TestCase):
     def test_dates_are_fixed(self):
         dates = self.git("log", "--format=%ad|%cd", "--date=iso-strict")
         self.assertTrue(all(d.split("|")[0] == d.split("|")[1] for d in dates))
-        self.assertEqual(dates[-1].split("|")[0], "2026-01-05T10:00:00+00:00")
-        self.assertTrue(all(re.match(r"2026-\d\d-\d\dT1[02]:00:00\+00:00", d) for d in [x.split("|")[0] for x in dates]))
+        self.assertEqual(utc(dates[-1].split("|")[0]), "2026-01-05T10:00:00+00:00")
+        self.assertTrue(all(re.match(r"2026-\d\d-\d\dT1[02]:00:00\+00:00", utc(d)) for d in [x.split("|")[0] for x in dates]))
 
     def test_history_has_the_scenarios_the_readme_describes(self):
         subjects = self.git("log", "--format=%s")
