@@ -196,6 +196,12 @@ analyse, and it is built to talk about code, not about people.
 See [CONTRIBUTING.md](CONTRIBUTING.md). Run the tests with
 `python -m unittest discover -s tests -v`.
 
+## Author
+
+Built by [Vivek Bhange](https://vivekbhange.tech), Full-Stack AI Engineer.
+See this project on my portfolio: https://vivekbhange.tech/projects/git-forensics-skill/
+More open-source skill packs: https://vivekbhange.tech/projects/
+
 ## License
 
 MIT © 2026 Vivek Bhange. See [LICENSE](LICENSE).

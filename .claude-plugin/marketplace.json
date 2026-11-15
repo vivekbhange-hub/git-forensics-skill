@@ -2,7 +2,7 @@
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "git-forensics-skill",
   "description": "Your git log already knows where the bugs are: hotspots, hidden coupling and bus factor from history alone.",
-  "owner": { "name": "Vivek Bhange", "url": "https://github.com/vivekbhange-hub" },
+  "owner": { "name": "Vivek Bhange", "url": "https://vivekbhange.tech" },
   "plugins": [
     {
       "name": "git-forensics-skill",
